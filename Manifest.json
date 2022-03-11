@@ -1,0 +1,21 @@
+{
+    "name": "The weather now",
+    "version": "2.0.0",
+    "description": "The weather now",
+    "manifest_version": 3,
+    "author": "Mohamed Mediouni",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Weather getter"
+    },
+    "icons": {
+        "16": "sun.png",
+        "48": "sun.png",
+        "128": "sun.png"
+    },
+    "permissions":      ["geolocation"],
+    "content_scripts":  [ {
+        "js":               ["script.js" ],
+        "matches":          ["<all_urls>" ]
+    } ]    
+}
